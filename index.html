@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelkarim aoulallay</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- tailwind -->
+    <link rel="stylesheet" href="css/output.css">
+    <!-- script -->
+    <script defer src="js/app.js"></script>
+    <script defer src="js/animation.js"></script>
+</head>
+
+<body class="min-h-screen relative bg-primaryColor">
+
+    <!---------------------- glass effect ---------------------->
+    <div id="overlay" class="z-30 fixed h-screen w-screen hidden backdrop-blur transition-all">
+    </div>
+
+    <!---------------------- header ---------------------->
+    <header class="py-6 bg-primaryColor">
+
+        <div class="container mx-auto px-4 md:px-8 xl:w-[1200px]">
+
+            <div class="flex items-center justify-between">
+                <a href="\" class="relative z-50">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+
+                <nav>
+                    <button aria-expanded="false" aria-label="menu" aria-controls="slide-menu"
+                        class="md:hidden z-50 relative">
+                        <svg width="50" height="40" aria-hidden="true">
+
+                            <line id="lineOne" x1="10" y1="10" x2="40" y2="10" stroke-width="4" stroke-linecap="round"
+                                class="stroke-accentColor" />
+                            <line id="lineTwo" x1="3" y1="20" x2="47" y2="20" stroke-width="4" stroke-linecap="round"
+                                class="stroke-accentColor" />
+                            <line id="lineThree" x1="10" y1="30" x2="40" y2="30" stroke-width="4" stroke-linecap="round"
+                                class="stroke-accentColor" />
+
+                        </svg>
+                    </button>
+
+                    <ul id="navigationMenu"
+                        class="hidden md:flex gap-8 z-40 text-neutralColorLight bg-primaryColor duration-500
+                        fixed inset-0 right-0 inset-x-1/3 translate-x-full 
+                        pt-28 space-y-4  pl-8 
+                        md:flex-row md:relative md:inset-auto md:inset-x-auto md:translate-x-0 md:pt-0 md:space-y-0 md:text-textColorDark md:pl-0">
+
+                        <li><a href="#" id="nav-link"
+                                class="hover:text-accentColor transition-colors text-accentColor"><span
+                                    class="text-accentColor">01.</span>
+                                HOME</a></li>
+                        <li><a href="#work" id="nav-link" class="hover:text-accentColor transition-colors"><span
+                                    class="text-accentColor">02.</span>
+                                WORK</a></li>
+                        <li><a href="#about" id="nav-link" class="hover:text-accentColor transition-colors"><span
+                                    class="text-accentColor">03.</span>
+                                ABOUT</a></li>
+                        <li><a href="#contact" id="nav-link" class="hover:text-accentColor transition-colors"><span
+                                    class="text-accentColor">04.</span>
+                                CONTACT</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <!---------------------- Landing page ---------------------->
+    <div class="bg-primaryColor">
+
+        <div class="container mx-auto px-4 md:px-8 xl:w-[1200px]">
+            <div id="landing-page" class="relative flex flex-col justify-center">
+                <h1 class="text-4xl text-center
+                text-accentColor font-bold md:text-6xl md:leading-[4rem] md:text-left">
+                    Hi, i'm Abdelkarim.<br>
+                    <span style="-webkit-text-stroke: 2px rgb(88 225 196);" class="text-transparent">FRONT-END</span>
+                    dev.
+                </h1>
+
+                <p class="text-neutralColorLight text-lg text-center
+                mt-6 max-w-screen-sm md:text-xl md:text-left">
+                    I like to build front-end scalable
+                    products with
+                    great user
+                    experiences plus reponsive
+                    design.
+                </p>
+
+                <a href="#work" id="heroBtn"
+                    class="text-accentColor inline-block relative overflow-hidden mt-12 mx-auto md:mx-0
+                shadow-[0_0_0_2px] px-4 py-3 w-fit
+                 
+                before:content-[''] before:absolute before:top-0 before:left-0
+                before:bg-mixBlendColor before:h-full before:w-full before:mix-blend-difference before:-translate-x-full before:transition-transform">
+                    View my work
+
+                </a>
+
+                <div id="icons"
+                    class=" mt-8 space-x-4 text-center
+                    md:my-0 md:space-x-0 md:text-left md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 md:translate-x-1/2 md:flex md:flex-col md:space-y-4">
+                    <a href="https://github.com/karimAoulallay"
+                        class="text-secondyColor hover:text-accentColor hover:-translate-y-1 transition-transform text-2xl">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abdelkarim-aoulallay-43061324b/"
+                        class="text-secondyColor hover:text-accentColor hover:-translate-y-1 transition-transform text-2xl">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com/karim_aoulallay"
+                        class="text-secondyColor hover:text-accentColor hover:-translate-y-1 transition-transform text-2xl">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!---------------------- Work ---------------------->
+
+
+</body>
+
+</html>
